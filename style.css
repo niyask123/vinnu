@@ -1,0 +1,94 @@
+
+        .nav-link {
+            transition: background-color 0.6s ease; /* Smooth transition */
+            border-radius:50%;
+        }
+
+        .nav-link:hover {
+            background-color: rgb(88, 186, 88); /* Change to green on hover */
+            border-start-end-radius: 100%;
+            /* border-radius:50%; */
+            color: white; /* Optional: change text color for better contrast */
+        }
+        .scroll-to-home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .scroll-to-home-button:hover {
+            background-color: darkgreen;
+        }
+        /* Custom style for focus state */
+        .form-control:focus {
+            border-color: #28a745; /* Green border color */
+            box-shadow: 0 0 0 0.2rem rgba(1, 234, 56, 0.584); /*Green shadow  */
+            outline: none;
+        }
+
+
+/* image filter for services section*/
+/* ------------------------------------- */
+
+/* Flexbox for button row */
+.image-container {
+    margin-bottom: 30px;
+    }
+    .filter-btn img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    }
+    .btn-active {
+    background-color: green !important;
+    color: white !important;
+    }
+/* Flexbox for buttons */
+    .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+
+    /* #aboutme {
+        background-image: url('images/jess-bailey-Bg14l3hSAsA-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }   */
+    /* #services { */
+        /* background-image: url('images/jess-bailey-l3N9Q27zULw-unsplash.jpg'); */
+        /*background-size: cover;*/ /* Ensures the image covers the whole page */
+        /*background-repeat: no-repeat;*/ /* Prevents the image from repeating */
+        /*background-position: center;*/ /* Centers the image */
+    /* }   */
+    /* #home {
+        background-image: url('images/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        
+    }  */
+    /* #contactme{
+        background-image: url('images/quino-al-4SNUcHPiC8c-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+    } */
+
+    /* .container {
+        background-image: url('images/Green\ Fresh\ Leaf\ Halo\ Minimalist\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }  */

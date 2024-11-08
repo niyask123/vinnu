@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinya Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="images\aboutbg.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3\bootstrap-icons-1.11.3\font\bootstrap-icons.css">
+    
+</head>
+<body>
+    <div class="container ">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-sticky" id="navbarr">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler " type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-3  p-5 me-5 mt-1  ">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link active text-success" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-success" href="#aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-success" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-success" href="#contactme">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar close -->
+        <section id="home">
+            <div class="container-fluid mt-6">
+                <div class="row">
+                    <!-- Image on the left side -->
+                    <div class="col-md-6">
+                        <img src="images\vinhome.png"  alt="Placeholder Image" class="img-fluid rounded-circle border-0 " width="400">
+                    </div>
+                    <!-- Content on the right side -->
+                    <div class="col-md-6 text-center">
+                        <div class="col text-md-start mt-5 pe-3">
+                            <p class="fs-1 fw-bold text-success">Vinya</p><br/>
+                            <p class="fs-3">I'm an <span class="fs-2 ps-2 fw-bold">"Artist"</span> </p>
+                            <a href="https://wa.me/message/T7UA5AFJK7G3O1" class="fs-4" ><i class="bi-whatsapp text-success"></i></a>
+                            <a href="https://www.instagram.com/vinyakrishnan?utm_source=qr&igsh=dGR5cTJleHIwODll" class="ps-3 fs-4"><i class="bi-instagram text-success"></i></a>
+                            <a href="mailto:vinyakrishnan@gmail.com" class="ps-3 fs-4"><i class="bi bi-envelope text-success"></i></a>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <br><br><br><br><br> -->
+        <section id="aboutme">
+            <!-- <br><br><br> -->
+            <div class="container-fluid mt-3 ">
+                <div class="row">
+                    <!-- Content on the left side -->
+                        <div class="col-md-6  ">
+                            <div class="col mt-5 pe-3">
+                                <p class="fs-1 text-success fw-bold">About Me</p>
+                                <p class="fs-5">Self-taught artist with continuous self-study and
+                                    practice in various artistic techniques and mediums.
+                                    And specializing in pencil drawing, color drawing ,pen drawing,etc.
+                                </p>
+                                <p class="fs-4"><span class="fs-3 text-success text-decoration-underline">Experience :</span> 2020 - Present</p>
+                                <p class="fs-4"><span class="fs-3 text-success text-decoration-underline">Skills :</span>
+                                    <ul class="ms-4 fs-6">
+                                        <li  class="ms-4 fs-5">Pencil Drawing</li>
+                                        <li class="ms-4 fs-5">Color Pencil Drawing</li>
+                                        <li class="ms-4 fs-5">Pen Drawing</li>        
+                                        <li class="ms-4 fs-5">Stencil Model Drawing</li>                                
+                                        <li class="ms-4 fs-5">Black Paper Drawing</li>
+                                        <li class="ms-4 fs-5">Oil Pastels</li>
+                                        <li class="ms-4 fs-5">Acrylic</li>
+                                        <li class="ms-4 fs-5">Digital Art</li>
+                                    </ul>
+                                </p>                
+                            </div>
+                        </div>
+                    <!-- Image on the right side -->
+                    <div class="col  text-md-center mt-5" >
+                        <img src="images\aboutbg.png" class="img-fluid rounded-pill" alt="..." width="310"
+                            style="filter: drop-shadow(50%),brightness(100%);filter: contrast(140%);">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <br><br><br><br><br><br> -->
+        <section id="services">
+            <!-- <br><br><br> -->
+            <div class="container-fluid mt-3  ">
+                <div class="row">
+            <!-- <div class="container"> -->
+                <p class="fs-1 text-success fw-bold">Services</p>
+            </div>
+            <!-- Buttons to filter images -->
+            <div class="filter-buttons">
+                <button class="btn btn-outline-success filter-btn btn-active" onclick="filterImages('all', this)">
+                    All
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('pencil', this)">
+                    Pencil Drawing
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('color-pencil', this)">
+                    Color Pencil Drawing
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('pen', this)">
+                    Pen Drawing
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('stencil', this)">
+                    Stencil Model Drawing
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('black-paper', this)">
+                    Black Paper Drawing
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('oil-pastels', this)">
+                    Oil Pastels
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('acrylic', this)">
+                    Acrylic
+                </button>
+                <button class="btn btn-outline-success filter-btn" onclick="filterImages('digital-art', this)">
+                    Digital Art
+                </button>
+            </div>
+            <!-- Image gallery -->
+            <div class="row" >
+                <!-- pencil drawing -->
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p1.jpg" class="img-fluid" alt="Pencil Drawing" width="300px" >
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p2.jpg" class="img-fluid" alt="Pencil Drawing"width="300px" >
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p3.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p4.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p5.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p6.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p7.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p8.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p9.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p10.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p11.jpg" class="img-fluid" alt="Pencil Drawing" width="300px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p12.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p13.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p14.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p15.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p16.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p17.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p18.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p19.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p20.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p21.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p22.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p23.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p24.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p25.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p26.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p27.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p28.jpg" class="img-fluid" alt="Pencil Drawing" width="400px" height="400px">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p29.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p30.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p31.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p32.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p33.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p34.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p35.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p36.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p37.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p38.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p39.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p40.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p41.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pencil">
+                    <img src="images\Pencildrawweb\p42.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Pencil Drawing</p> -->
+                </div>
+
+
+                <!-- color pencil drawing -->
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\1.jpg" class="img-fluid" alt="Pencil Drawing" width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\3.jpg" class="img-fluid" alt="Pencil Drawing" width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\4.jpg" class="img-fluid" alt="Pencil Drawing"width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\5.jpg" class="img-fluid" alt="Pencil Drawing"width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\6.jpg" class="img-fluid" alt="Pencil Drawing"width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\7.jpg" class="img-fluid" alt="Pencil Drawing"width="400px" height="400px">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\8.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\9.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\10.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\11.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\12.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\13.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\14.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\15.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\16.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\17.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter color-pencil">
+                    <img src="images\Colorpencildrawweb\18.jpg" class="img-fluid" alt="Pencil Drawing">
+                    <!-- <p class="text-center">Color Pencil Drawing</p> -->
+                </div>
+
+                <!-- pen drawing -->
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\1.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\2.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\3.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\4.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\5.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\6.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\7.png" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\8.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\9.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\10.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\11.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\12.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\13.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\14.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\15.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\16.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\17.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>                
+                <div class="col-md-4 image-container filter pen">
+                    <img src="images\Pendraw\18.jpg" class="img-fluid" alt="Pen Drawing">
+                    <!-- <p class="text-center">Pen Drawing</p> -->
+                </div>
+
+
+
+                <!-- stencil model drawing -->
+                <div class="col-md-4 image-container filter stencil">
+                    <img src="images\Stencilmodel\s1.jpg" class="img-fluid" alt="Stencil Drawing">
+                    <!-- <p class="text-center">Stencil Model Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter stencil">
+                    <img src="images\Stencilmodel\s2.jpg" class="img-fluid" alt="Stencil Drawing">
+                    <!-- <p class="text-center">Stencil Model Drawing</p> -->
+                </div>
+
+                <!-- black paper drawing -->
+                <div class="col-md-4 image-container filter black-paper">
+                    <img src="images\Blkpaper\1.jpg" class="img-fluid" alt="Black Paper Drawing">
+                    <!-- <p class="text-center">Black Paper Drawing</p> -->
+                </div>
+                <div class="col-md-4 image-container filter black-paper">
+                    <img src="images\Blkpaper\2.jpg" class="img-fluid" alt="Black Paper Drawing">
+                    <!-- <p class="text-center">Black Paper Drawing</p> -->
+                </div>
+
+
+
+                <!-- oil pastels -->
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\1.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\2.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\3.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\4.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\5.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\6.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\7.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\8.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\9.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\10.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\11.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\12.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\13.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\14.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\15.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\16.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\17.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\18.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\19.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\20.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\21.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                <div class="col-md-4 image-container filter oil-pastels">
+                    <img src="images\Oilpastels\22.jpg" class="img-fluid" alt="Oil Pastels">
+                    <!-- <p class="text-center">Oil Pastels</p> -->
+                </div>
+                
+
+                <!-- acrylic -->
+                <div class="col-md-4 image-container filter acrylic">
+                    <img src="images\Acrylicweb\1.jpg" class="img-fluid" alt="Acrylic">
+                    <!-- <p class="text-center">Acrylic</p> -->
+                </div>
+
+                <!-- digital drawings -->
+                <div class="col-md-4 image-container filter digital-art">
+                    <img src="images\Digital drawings\d1.png" class="img-fluid" alt="Digital Art">
+                    <!-- <p class="text-center">Digital Art</p> -->
+                </div>
+                <div class="col-md-4 image-container filter digital-art">
+                    <img src="images\Digital drawings\d2.png" class="img-fluid" alt="Digital Art">
+                    <!-- <p class="text-center">Digital Art</p> -->
+                </div>
+            </div>            
+        </section>
+        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+        <section id="contactme">  
+            <div class="container-fluid mt-6">
+                <div class="row">
+                    <p class="fs-1 text-success fw-bold">Get In Touch With Me</p>
+                    <!-- Image on the left side -->
+                    <div class="col  text-md-center mt-5">
+                        <img src="images\vincontact.png" class="img-fluid rounded-pill" alt="..." width="310"
+                        style="filter: drop-shadow(50%),brightness(100%);filter: contrast(140%);">
+
+                    </div>
+                    <!-- Content on the right side -->
+                    <div class="col-md-6 text-center">  
+                        <div class="col text-md-start mt-5 pe-3">
+                            <form id="submit-form" action="sendmail.php" method="post">
+                                <div class="row mb-1">
+                                    <!-- Name Input -->
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label  ">Name</label>
+                                        <input type="text" class="form-control border-success rounded-pill" id="name" name="name" placeholder="Enter Your Name">
+                                    </div>
+                                    <!-- Email Input -->
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control border-success rounded-pill" id="email"name="email" placeholder="Enter Your Email">
+                                    </div>
+                                </div>                            
+                                <div class="row mb-3">
+                                    <!-- Message Input -->
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control border-success " id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>                            
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-success rounded-pill">Send Message</button>
+                                </div>
+                            </form>
+                        </div><br/>
+                        <footer class=" text-center text-lg-center ">
+                            <div class="container p-1">
+                                <div class="column">              
+                                    <a href="https://wa.me/message/T7UA5AFJK7G3O1" class="fs-4"><i class="bi-whatsapp text-success"></i></a>
+                                    <a href="https://www.instagram.com/vinyakrishnan?utm_source=qr&igsh=dGR5cTJleHIwODll" class="ps-3 fs-4"><i class="bi-instagram text-success"></i></a>
+                                    <a href="mailto:naveenkrishnack@gmail.com" class="ps-3 fs-4"><i class="bi bi-envelope text-success"></i></a>   
+                                </div>
+                            </div>
+                            
+                        </footer>
+                    </div>
+                </div><br>
+                <div class="text-center p-2 bg-success text-white rounded-pill">
+                    © 2024 Vinya V Krishnan. All rights reserved.
+                </div>
+            </div>
+            <br>
+            <!-- <div class="container-fluid mt-3 ">          
+            <div class="container px-6">
+                <p class="fs-1 text-success fw-bold">Get In Touch With Me</p>
+                <div class="container ">
+                    <form>
+                        <div class="row mb-1">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label  ">Name</label>
+                                <input type="text" class="form-control border-success rounded-pill" id="name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control border-success rounded-pill" id="email" placeholder="Enter Your Email">
+                            </div>
+                        </div>                            
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control border-success " id="message" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>                            
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success rounded-pill">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <footer class=" text-center text-lg-center ">
+                    <div class="container p-1">
+                        <div class="column">              
+                            <a href="https://wa.me/message/T7UA5AFJK7G3O1" class="fs-4"><i class="bi-whatsapp text-success"></i></a>
+                            <a href="https://www.instagram.com/vinyakrishnan?utm_source=qr&igsh=dGR5cTJleHIwODll" class="ps-3 fs-4"><i class="bi-instagram text-success"></i></a>
+                            <a href="mailto:vinyakrishnan@gmail.com" class="ps-3 fs-4"><i class="bi bi-envelope text-success"></i></a>   
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-center p-2 bg-success text-white rounded-pill">
+                        © 2024 Vinya V Krishnan. All rights reserved.
+                    </div>
+                </footer>
+            </div> -->
+        </section>
+    </div>
+    
+    <a href="#home" class="scroll-to-home-button rounded-pill"><i class="bi bi-arrow-up-short "></i></a>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
